@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script>
+            function day() {
+                var day = parseInt(document.getElementById("day").value);
+                day = day % 7;
+                if (day == 1) {
+                    document.getElementById("r").innerHTML = "The day is Monday!";
+                } else if (day == 2) {
+                    document.getElementById("r").innerHTML = "The day is Tuesday!";
+                } else if (day == 3) {
+                    document.getElementById("r").innerHTML = "The day is Wednesday!";
+                } else if (day == 4) {
+                    document.getElementById("r").innerHTML = "The day is Thursday!";
+                } else if (day == 5) {
+                    document.getElementById("r").innerHTML = "The day is Friday!";
+                } else if (day == 6) {
+                    document.getElementById("r").innerHTML = "The day is Saturday!";
+                } else if (day == 7) {
+                    document.getElementById("r").innerHTML = "The day is Sunday!";
+                } else {
+                    document.getElementById("r").innerHTML = "There was an error, please try again!";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Day Checker</h1>
+        <br>
+        <input id="day" type="text">
+        <br>
+        <br>
+        <button onclick="day();">Check day</button>
+        <br>
+        <p id="r"></p>
+    </body>
+</html>

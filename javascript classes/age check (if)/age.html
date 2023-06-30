@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            function checkage() {
+                var age = parseInt(document.getElementById("text").value);
+                if (age >= 18) {
+                    document.getElementById("new").innerHTML = "You are an adult!";
+                } else {
+                    document.getElementById("new").innerHTML = "You are not an adult but a child!";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Enter your age</h1>
+        <input type="text" id = "text">
+    </br>
+    </br>
+        <button onclick="checkage();" >Check age</button>
+        <p id="new"></p>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script>
+            function findMax()
+            {
+                var a = parseInt(document.getElementById("t1").value);
+                var b = parseInt(document.getElementById("t2").value);
+                var c = parseInt(document.getElementById("t3").value);
+                if (a>b)
+                {
+                    if (a>c)
+                    {
+                        document.getElementById("result").innerHTML=a+" is largest";
+                    }
+                    else
+                    {
+                        document.getElementById("result").innerHTML=c+" is largest";
+                    }
+                }
+                else
+                {
+                    if (b>c)
+                    {
+                        document.getElementById("result").innerHTML=b+" is largest";
+                    }
+                    else
+                    {
+                        document.getElementById("result").innerHTML=c+" is largest";
+                    }
+                }
+               
+            } 
+        </script>
+    </head>
+    <body>
+        <p>Enter First Number</p>
+        <input id = "t1" type="text"/></br>
+        <p>Enter Second Number</p>
+        <input id = "t2" type="text"/></br>
+        <p>Enter Third Number</p>
+        <input id = "t3" type="text"/></br>
+        <button onclick="findMax();" >Click me!</button> </br>
+        <p id="result"></p>
+    </body>
+</html>
